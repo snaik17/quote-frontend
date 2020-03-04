@@ -15,7 +15,7 @@ router.get('/', function(req, res){
 });
 
 router.post('/',
-  [ check('age').isNumeric().withMessage("age is required and must be a number"),
+  [ check('age').isNumeric().withMessage("age  is required and must be a number"),
     check('weight').isNumeric().withMessage("weight is required and must be a number"),
     check('feet').isNumeric().withMessage("height in feet is required and must be a number"),
     check('inches').isNumeric().withMessage("height in inches is required and must be a number"),
