@@ -23,7 +23,7 @@ router.post('/',
     check('smoker').not().isEmpty().withMessage("smoker selection is required"),
   ],
   function(req, res){
-    console.log("Received form", req.body);
+    console.log("Received form ", req.body);
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       var result = req.body;
